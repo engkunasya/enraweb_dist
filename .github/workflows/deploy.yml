@@ -28,4 +28,6 @@ jobs:
             git pull origin main                      # Pull the latest changes
             echo "Deployment complete!"
             cp -r /root/enraweb /var/www/html/react-app
-            echo "Copy from enraweb to var/www/html"
+            echo "Copy from enraweb to var/www/html/react-app"
+            sudo systemctl restart nginx
+            echo "nginx restart"
